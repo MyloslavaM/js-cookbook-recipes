@@ -1,0 +1,24 @@
+{
+  "name": "js-cookbook-recipes",
+  "version": "1.0.0",
+  "description": "Practice of the recipes from JS cookbook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyloslavaM/js-cookbook-recipes.git"
+  },
+  "keywords": [],
+  "author": "Myloslava Martynova",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MyloslavaM/js-cookbook-recipes/issues"
+  },
+  "homepage": "https://github.com/MyloslavaM/js-cookbook-recipes#readme",
+  "dependencies": {
+    "lodash": "^4.18.1"
+  }
+}
