@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test Page</title>
+  </head>
+  <body>
+    <p>This is the index page</p>
+    <script>
+      if (window.location.protocol === "file:") {
+        console.log("Running as local file!");
+      } else if (window.location.host.startsWith("localhost")) {
+        console.log("Running on a remote web server");
+      }
+    </script>
+  </body>
+</html>
