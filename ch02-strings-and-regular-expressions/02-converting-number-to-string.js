@@ -72,6 +72,7 @@ console.assert(
 
 // Ask for scientific notation with 2 decimal plates. TBD
 const scientificString = someNumber.toExponential(2); // => scientificString === 1.23e+3
+console.log(scientificString);
 
 // Format number as US currency string
 //======== practice ========
