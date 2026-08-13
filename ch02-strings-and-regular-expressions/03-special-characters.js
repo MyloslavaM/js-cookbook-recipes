@@ -17,3 +17,19 @@ console.log(favoriteMovie);
 
 const copyrightNotice = "This page \u00A9 Shelly Powers";
 console.log(copyrightNotice);
+
+// Inserting Emojis
+//Emojis it is extended Unicode characteristics
+const hamburger = "🍔"; // copy-paste method
+const hamburgerStory = "I like hamburgers " + hamburger;
+// console.log(`🍔 length: ${hamburger.length}`);
+// console.log(hamburgerStory);
+
+/* Another method is to use the Unicode value for emojis.
+The problem you can't use a standard \u 
+=> every emoji is stored as s 4-byte value
+=> the unicode characters that map to the keys are usually encoded as 2-byte value
+*/
+
+const hamburgerStory1 = `I like hamburgers like ${hamburger} and ${String.fromCodePoint(0x1f354)}`;
+console.log(hamburgerStory1);
