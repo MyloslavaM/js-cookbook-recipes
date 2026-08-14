@@ -24,7 +24,7 @@ If you've created a getDaysSince() foo for calculation the difference between da
 
 function getDaysSince(date) {
   const today = new Date();
-  const oneDay = 24 * 60 * 60 * 100; // hours*minutes*seconds*milliseconds
+  const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   return Math.round(Math.abs(today - date) / oneDay);
 }
 
