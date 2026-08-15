@@ -6,7 +6,7 @@ use String.includes() method
 
 const searchString = "infinitely";
 const fullText =
-  "I know not where I was born, save that the clastle was" +
+  "I know not where I was born, save that the castle was " +
   "infinitely old and infinitely horrible";
 console.assert(
   fullText.includes(searchString) === true,
