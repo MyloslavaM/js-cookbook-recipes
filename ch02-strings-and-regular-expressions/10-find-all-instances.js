@@ -27,3 +27,10 @@ const parser = (stringSearch, regexp) => {
 };
 
 console.log(parser(searchString, regexp));
+
+/*
+if you don't want to iterate over the results, you can dump everything into
+an array using the spread operator 
+*/
+const matches = [...searchString.matchAll(regexp)];
+console.log(matches);
