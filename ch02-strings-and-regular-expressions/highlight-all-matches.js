@@ -7,7 +7,7 @@ document.getElementById("searchSubmit").onclick = function () {
   const searchText = document.getElementById("incoming").value;
   let highlightedResult = "<pre>";
   let startPosition = 0;
-  let endPosition = 0;
+  let endPosition;
 
   // Find each match, and build the result
   const matches = searchText.matchAll(regexp);
