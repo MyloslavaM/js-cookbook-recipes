@@ -12,3 +12,5 @@ const randomNumber = (minimum, max) => {
 };
 
 console.log(randomNumber(minimum, max));
+
+export { randomNumber };
