@@ -17,6 +17,7 @@ function roundNumber(value, numberOfDecimalPlaces) {
   const roundedNumber = Math.round(numberToRound);
   return roundedNumber / 10 ** numberOfDecimalPlaces;
 }
-const fractionalNumber = 19.48938;
-const roundedNumber = roundNumber(fractionalNumber, 2);
+const fractionalNumber = 897.4321111111;
+const roundedNumber = roundNumber(fractionalNumber, 5);
 console.log(roundedNumber);
+export { roundNumber };
