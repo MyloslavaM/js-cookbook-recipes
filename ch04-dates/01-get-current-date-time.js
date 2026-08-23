@@ -24,3 +24,9 @@ console.log(`Same date with no time: ${today}`);
 
 const anotherDay = new Date(2020, 0, 28); // 2020-01-27T22:00:00.000Z
 anotherDay.getDay(); // 2 = Tuesday (0 = Saturday)
+
+/*
+todatestring() to return readable format for date
+*/
+console.log(today.toDateString()); // Sun Aug 23 2026 = weekday, month, date, year
+console.log(today.toLocaleDateString());
