@@ -17,3 +17,10 @@ console.log(`This day is ${today.getDay()}`); // 0 to 6; 0 it is Sunday
 const hours = today.getHours();
 const minutes = today.getMinutes().toString().padStart(2, "0");
 console.log(`Time ${hours}:${minutes}`);
+
+// Remove all the time information
+today.setHours(0, 0, 0, 0);
+console.log(`Same date with no time: ${today}`);
+
+const anotherDay = new Date(2020, 0, 28); // 2020-01-27T22:00:00.000Z
+anotherDay.getDay(); // 2 = Tuesday (0 = Saturday)
