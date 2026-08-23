@@ -12,3 +12,19 @@ const year = array[2];
 const month = array[0];
 const eventDate = new Date(year, month - 1, day);
 console.log(eventDate.toDateString());
+
+/*
+If you attempt tp create a Date object with a nonnumeric string, 
+you will receive an 'invalid date' object.
+For test you can use isNaN()
+*/
+const badDate = "12 Bananas";
+const convertedDate = new Date(badDate);
+console.log(convertedDate); // Invalid Date
+
+console.log(Number.isNaN(convertedDate)); // false
+if (Number.isNaN(convertedDate)) {
+  //We end up here, because the date object was not created sucessfully
+} else {
+  // for a valid Data instance, we end up here
+}
