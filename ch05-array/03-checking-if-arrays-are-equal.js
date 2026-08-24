@@ -33,3 +33,29 @@ console.log(areArraysEqual(fruitNamesA, fruitNamesD)); // false
 
 //you can easily sort num or string using Array.sort() method
 console.log(areArraysEqual(fruitNamesA.sort(), fruitNamesC.sort())); // true
+
+const date1 = [new Date(2030, 2, 2)];
+const date2 = [new Date(2030, 2, 2)];
+console.log(areArraysEqual(date1, date2)); //false
+/*
+You need use Date.getTime()
+*/
+function areArraysEqualDate(arrayA, arrayB) {
+  if (!Array.isArray(arrayA) || !Array.isArray(arrayB)) {
+    return false;
+  } else if (arrayA === arrayB) {
+    return true;
+  } else if (arrayA.length !== arrayB.length) {
+    return false;
+  } else {
+    for (let i = 0; i < arrayA.length; i++) {
+      if (arrayA[i] instanceof Date && arrayB[i] instanceof Date) {
+        if (arrayA[i].getTime() !== arrayB[i].getTime()) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+}
+console.log(areArraysEqualDate(date1, date2));
