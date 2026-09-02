@@ -24,7 +24,7 @@ function sumRoundsB(...numbers) {
 
 function sumRoundsC(...numbers) {
   if (!numbers.every(Number.isFinite)) {
-    throw new TypeError("sumRounds expects only finite numbers");
+    throw new TypeError("sumRoundsC expects only finite numbers");
   }
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -32,4 +32,6 @@ function sumRoundsC(...numbers) {
   }
   return Math.round(sum);
 }
-console.log(sumRoundsC(1, 10, 12));
+// console.log(sumRoundsC(1, 10, 12));
+
+export { sumRounds, sumRoundsB, sumRoundsC };

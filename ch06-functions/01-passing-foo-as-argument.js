@@ -36,3 +36,4 @@ function buttonClickedC() {
     alert(`You clicked the button 2 seconds ago`);
   }, 2000);
 }
+export { buttonClicked, buttonClickedB, buttonClickedC };
