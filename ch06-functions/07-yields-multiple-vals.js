@@ -16,11 +16,11 @@ const generator = generateValues();
 // Rule of thumb: yield is for values you want the consumer to iterate over;
 // return is for a "here's the final result" value that only manual next() — or yield* — can see.
 
-// console.log(generator.next().value); //894598
-// console.log(generator.next().value); // This is the second value
-// console.log(generator.next().value); // 5
-// console.log(generator.next().value); // This is the end
-// console.log(generator.next().value); // undefined
+console.log(generator.next().value); //894598
+console.log(generator.next().value); // This is the second value
+console.log(generator.next().value); // 5
+console.log(generator.next().value); // This is the end
+console.log(generator.next().value); // undefined
 
 // for ... of loop working good with this foo
 for (const value of generateValues()) {
