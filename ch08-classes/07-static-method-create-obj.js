@@ -23,8 +23,8 @@ const book = new Book("Good Design", "Polly", "Morfissim");
 const sequel = Book.createSequel(book, "Even Golder Design");
 
 console.log(sequel);
-// // ==================================================
-// // create a Book.createTrilogy() method to get an arr of three Book obj.
+// ==================================================
+// create a Book.createTrilogy() method to get an arr of three Book obj.
 class Author {
   constructor(fistName, lastName) {
     this.fistName = fistName;
