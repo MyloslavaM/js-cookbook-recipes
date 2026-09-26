@@ -31,4 +31,15 @@ function findPrimes(fromNumber, toNumber) {
       previousProgress = progress;
     }
   }
+  return primes;
 }
+// Listen for the message from the main page telling us to start searching
+onmessage = function (event) {
+  const fromNumber = Number(event.data.from);
+  const toNumber = Number(event.data.to);
+
+  const primes = findPrimes(fromNumber, toNumber);
+
+  // Send the completed list back to the main page
+  postMessage({ messageType: "PrimeList", data: primes });
+};

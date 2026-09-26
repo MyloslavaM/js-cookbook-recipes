@@ -6,7 +6,7 @@ function startSearch() {
   const statusDisplay = document.getElementById("status");
 
   // Create the worker
-  worker = new Worker("prime-worker.js");
+  worker = new Worker("07a-prime-worker.js");
 
   statusDisplay.textContent = "Search started.";
 
