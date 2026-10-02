@@ -15,8 +15,21 @@ describe("factorialize", () => {
     expect(factorialize("5")).toBe(120);
   });
   test("NaN causes error", () => {
-    expect(() => {
-      factorialize(NaN).toThrow();
-    });
+    expect(() => factorialize(NaN)).toThrow();
+  });
+});
+
+// To optimize, using test.each()
+describe("factorialize", () => {
+  test.each([
+    [0, 1],
+    [1, 1],
+    [10, 3628800],
+    ["5", 120],
+  ])("Factorialize (%p) returns %p", (input, expected) => {
+    expect(factorialize(input)).toBe(expected);
+  });
+  test("NaN causes error", () => {
+    expect(() => factorialize(NaN)).toThrow();
   });
 });
