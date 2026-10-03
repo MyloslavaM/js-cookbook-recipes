@@ -4,7 +4,8 @@
   "description": "Practice of the recipes from JS cookbook",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --collect-coverage",
     "dev": "lite-server"
   },
   "repository": {
